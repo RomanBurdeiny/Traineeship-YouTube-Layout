@@ -1,112 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Layout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="logo">
-        <img src="youtube-logo.svg" alt="YouTube">
-      </div>
-      <nav class="main-menu">
-        <ul>
-          <li class="active">Home</li>
-          <li>Trending</li>
-          <li>Subscriptions</li>
-          <li>Library</li>
-          <li>History</li>
-          <li>Watch later</li>
-          <li>Favourites</li>
-          <li>Liked videos</li>
-          <li>Music</li>
-          <li>Games</li>
-          <li>Show more</li>
-        </ul>
-      </nav>
-      <div class="subscriptions">
-        <h3>Subscriptions</h3>
-        <ul>
-          <li>Gussie Singleton</li>
-          <li>Nora Francis</li>
-          <li>Belle Briggs</li>
-          <li>Eunice Cortez</li>
-          <li>Emma Hanson</li>
-          <li>Leah Berry</li>
-        </ul>
-      </div>
-      <div class="settings">Setting</div>
-    </aside>
+    <header>
+        <div class="header-burger-menu">
+            <input type="checkbox"  id="menu-toggle">
+            <label for="menu-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Trending</li>
+                    <li>Subscriptions</li>
+                    <li>Library</li>
+                    <li>History</li>
+                    <li>Watch later</li>
+                    <li>Favourites</li>
+                    <li>Liked videos</li>
+                    <li>Music</li>
+                    <li>Games</li>
+                    <li>Show more</li>
+                </ul>
+                <span>Subscriptions</span>
+                <ul>
+                    <li>Gussie Singleton</li>
+                    <li>Nora Francis</li>
+                    <li>Belle Briggs</li>
+                    <li>Eunice Cortez</li>
+                    <li>Emma Hanson</li>
+                    <li>Leah Berry</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-logo"></div>
+        <div class="header-search-input"></div>
+        <div class="header-actions"></div>
+    </header>
+    <section class="subscribed-channel"></section>
+    <section class="recommended"></section>
+    <section class="category"></section>
 
-    <!-- Main content -->
-    <main class="content">
-      <!-- Header -->
-      <header class="header">
-        <div class="search-bar">
-          <input type="text" placeholder="Search">
-        </div>
-        <div class="user-controls">
-          <!-- icons -->
-          <div class="icons">
-            <!-- notification, messages etc -->
-          </div>
-          <div class="user-avatar">
-            <!-- user avatar -->
-          </div>
-        </div>
-      </header>
-
-      <!-- Channel -->
-      <section class="channel">
-        <h2 class="channel-name">Dollie Blair</h2>
-        <div class="videos-horizontal">
-          <article class="video-card">
-            <img src="thumb1.jpg" alt="">
-            <h3>A Brief History Of Creation</h3>
-            <p>80k views – 3 days ago</p>
-          </article>
-          <article class="video-card">
-            <h3>Selecting The Right Hotel</h3>
-          </article>
-          <article class="video-card">Asteroids</article>
-          <article class="video-card">Telescopes 101</article>
-          <article class="video-card">Medical Care Is Just</article>
-          <article class="video-card">Moon Gazing</article>
-        </div>
-      </section>
-
-      <!-- Recommended -->
-      <section class="recommended">
-        <h2>Recommended</h2>
-        <div class="videos-grid">
-          <article class="video-card">
-            <h3>Dude You Re Getting A Telescope</h3>
-          </article>
-          <article class="video-card">
-            <h3>Moon Gazing</h3>
-          </article>
-        </div>
-      </section>
-
-      <!-- Food & Drink section -->
-      <section class="food-drink">
-        <div class="header-section">
-          <h2>Food & Drink</h2>
-          <span class="recommended-label">Recommended channel for you</span>
-        </div>
-        <div class="videos-horizontal">
-          <article class="video-card">Astronomy Or Astrology</article>
-          <article class="video-card">Advertising Outdoors</article>
-          <article class="video-card">Radio Astronomy</article>
-          <article class="video-card">A Good Autoresponder</article>
-          <article class="video-card">Baby Monitor Technology</article>
-          <article class="video-card">Asteroids</article>
-        </div>
-      </section>
-    </main>
-  </div>
 </body>
 </html>
