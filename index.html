@@ -7,59 +7,217 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-burger-menu">
-            <input type="checkbox"  id="menu-toggle">
+    
+<header class="header">
+    <div class="header-left">
+        <div class="burger-menu">
+            <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Trending</li>
-                    <li>Subscriptions</li>
-                    <li>Library</li>
-                    <li>History</li>
-                    <li>Watch later</li>
-                    <li>Favourites</li>
-                    <li>Liked videos</li>
-                    <li>Music</li>
-                    <li>Games</li>
-                    <li>Show more</li>
-                </ul>
-                <span>Subscriptions</span>
-                <ul>
-                    <li>Gussie Singleton</li>
-                    <li>Nora Francis</li>
-                    <li>Belle Briggs</li>
-                    <li>Eunice Cortez</li>
-                    <li>Emma Hanson</li>
-                    <li>Leah Berry</li>
-                </ul>
-            </nav>
         </div>
-        <div class="header-logo"></div>
-        <div class="header-search-input"></div>
-        <div class="header-actions"></div>
-    </header>
+        <div class="logo">YouTube</div>
+    </div>
+    <div class="header-center">
+        <input type="text" class="search-input" placeholder="Search...">
+    </div>
+    <div class="header-right">
+        <div class="action-icon bell"></div>
+        <div class="action-icon user-avatar"></div>
+    </div>
+</header>
+
+<nav class="sidebar-nav">
+    <ul class="main-nav">
+        <li>Home</li>
+        <li>Trending</li>
+        <li>Subscriptions</li>
+        <li>Library</li>
+        <li>History</li>
+        <li>Watch later</li>
+        <li>Favourites</li>
+        <li>Liked videos</li>
+        <li>Music</li>
+        <li>Games</li>
+        <li>Show more</li>
+    </ul>
+
+    <span class="nav-subheading">Subscriptions</span>
+    <ul class="subscriptions">
+        <li><img src="assets/characters/Gussie Singleton.svg" alt=""> Gussie Singleton</li>
+        <li><img src="assets/characters/Nora Francis.svg" alt=""> Nora Francis</li>
+        <li><img src="assets/characters/Belle Briggs.svg" alt=""> Belle Briggs</li>
+        <li><img src="assets/characters/Eunice Cortez.svg" alt=""> Eunice Cortez</li>
+        <li><img src="assets/characters/Emma Hanson.svg" alt=""> Emma Hanson</li>
+        <li><img src="assets/characters/Leah Berry.svg" alt=""> Leah Berry</li>
+    </ul>
+</nav>
+
+
+<main>
     <section class="subscribed-channel">
-        <div class="section-header">
-            <img class="section-header-avatar" src="" alt="">
-            <span class="section-header-title">Dollie Blair</span>
+    <div class="section-header">
+        <img class="section-header-avatar" src="assets/characters/Gussie Singleton.svg" alt="Dollie Blair">
+        <span class="section-header-title">Dollie Blair</span>
+    </div>
+    <div class="video-slider">
+        <div class="video-card">
+            <img src="assets/videos/BriefHistory.png" alt="A Brief History Of Creation">
+            <div class="video-info">
+                <h3>A Brief History Of Creation</h3>
+                <p>80k views • 3 days ago</p>
+                <span>Dollie Blair</span>
+            </div>
+            <span class="duration">4:15</span>
         </div>
-        <div class="slider">
-            <img src="assets/videos/BriefHistory.png" alt="">
-            <img src="assets/videos/SelectingTheRightHotel.png" alt="">
-            <img src="assets/videos/Telescopes101.png" alt="">
-            <img src="assets/videos/Asteroids.png" alt="">
-            <img src="assets/videos/MedicalCare.png" alt="">
-            <img src="assets/videos/MoonGlaze.png" alt="">
+        <div class="video-card">
+            <img src="assets/videos/SelectingTheRightHotel.png" alt="Selecting The Right Hotel">
+            <div class="video-info">
+                <h3>Selecting The Right Hotel</h3>
+                <p>123k views • 1 month ago</p>
+                <span>Dollie Blair</span>
+            </div>
+            <span class="duration">8:00</span>
         </div>
+        <div class="video-card">
+            <img src="assets/videos/Asteroids.png" alt="Asteroids">
+            <div class="video-info">
+                <h3>Asteroids</h3>
+                <p>43k views • 12 days ago</p>
+                <span>Dollie Blair</span>
+            </div>
+            <span class="duration">5:32</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/Telescopes101.png" alt="Telescopes 101">
+            <div class="video-info">
+                <h3>Telescopes 101</h3>
+                <p>11k views • 6 months ago</p>
+                <span>Dollie Blair</span>
+            </div>
+            <span class="duration">6:40</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/MedicalCare.png" alt="Medical Care Is Just">
+            <div class="video-info">
+                <h3>Medical Care Is Just</h3>
+                <p>98k views • 2 days ago</p>
+                <span>Dollie Blair</span>
+            </div>
+            <span class="duration">1:45</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/MoonGlaze.png" alt="Moon Gazing">
+            <div class="video-info">
+                <h3>Moon Gazing</h3>
+                <p>67k views • 4 months ago</p>
+                <span>Dollie Blair</span>
+            </div>
+            <span class="duration">2:20</span>
+        </div>
+    </div>
     </section>
-    <section class="recommended"></section>
-    <section class="category"></section>
+
+
+    <section class="recommended">
+    <h2>Recommended</h2>
+    <div class="video-row">
+        <div class="video-card">
+            <img src="assets/videos/Dude You Re Getting A Telescope.png" alt="">
+            <div class="video-info">
+                <h3>Dude You Re Getting A Telescope</h3>
+                <p>36k views • 3 months ago</p>
+                <span>Gussie French</span>
+            </div>
+            <span class="duration">3:40</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/Moon Gazing.png" alt="">
+            <div class="video-info">
+                <h3>Moon Gazing</h3>
+                <p>164k views • 11 months ago</p>
+                <span>Edward Osborne</span>
+            </div>
+            <span class="duration">2:12</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/Monn gazing 2.png" alt="">
+            <div class="video-info">
+                <h3>Moon Gazing</h3>
+                <p>125k views • 4 months ago</p>
+                <span>Dollie Blair</span>
+            </div>
+            <span class="duration">2:20</span>
+        </div>
+    </div>
+    </section>
+
+    <section class="category">
+    <div class="category-header">
+        <h2>Food & Drink</h2>
+        <span>Recommended channel for you</span>
+        <button class="subscribe-btn">Subscribe 2.3m</button>
+    </div>
+    <div class="video-row">
+        <div class="video-card">
+            <img src="assets/videos/Astronomy Or Astrology.png" alt="">
+            <div class="video-info">
+                <h3>Astronomy Or Astrology</h3>
+                <p>240k views • 4 months ago</p>
+                <span>Food & Drink</span>
+            </div>
+            <span class="duration">7:36</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/Advertising Outdoors.png" alt="">
+            <div class="video-info">
+                <h3>Advertising Outdoors</h3>
+                <p>13k views • 15 days ago</p>
+                <span>Food & Drink</span>
+            </div>
+            <span class="duration">2:19</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/Radio Astronomy.png" alt="">
+            <div class="video-info">
+                <h3>Radio Astronomy</h3>
+                <p>141k views • 11 months ago</p>
+                <span>Food & Drink</span>
+            </div>
+            <span class="duration">9:05</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/A Good Autoresponder.png" alt="">
+            <div class="video-info">
+                <h3>A Good Autoresponder</h3>
+                <p>45k views • 3 months ago</p>
+                <span>Food & Drink</span>
+            </div>
+            <span class="duration">3:40</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/Baby Monitor Technology.png" alt="">
+            <div class="video-info">
+                <h3>Baby Monitor Technology</h3>
+                <p>98k views • 7 days ago</p>
+                <span>Food & Drink</span>
+            </div>
+            <span class="duration">1:56</span>
+        </div>
+        <div class="video-card">
+            <img src="assets/videos/Asteroids watermelon.png" alt="">
+            <div class="video-info">
+                <h3>Asteroids</h3>
+                <p>123k views • 1 months ago</p>
+                <span>Food & Drink</span>
+            </div>
+            <span class="duration">2:48</span>
+        </div>
+    </div>
+    </section>
+</main>
 
 </body>
 </html>
